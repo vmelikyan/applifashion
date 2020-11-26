@@ -22,6 +22,14 @@ exports.config = {
         'chromedriver',
         [
             EyesService, {
+                useVisualGrid: true,
+                browsersInfo: [
+                    { width: 1200, height: 800, name: 'chrome' },
+                    { width: 1200, height: 800, name: 'firefox' },
+                    { width: 1200, height: 800, name: 'safari' },
+                    { width: 1200, height: 800, name: 'edgechromium' },
+                    { deviceName: 'iPhone X' }
+                ],
                 viewportSize: { width: 1200, height: 800 },
                 matchLevel: 'Layout',
                 matchTimeout: 0,
